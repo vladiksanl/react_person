@@ -6,11 +6,11 @@ export const Person = ({
     {typeof age !== 'undefined' && <p className="Person__age">I am {age}</p>}
     {isMarried ? (
       <p className="Person__partner">
-        {partnerName} is my
-        {sex === 'm'
-          ? 'wife'
-          : 'husband'
-        }
+        {partnerName} is my {' '}
+        {sex === 'm' ?
+          'wife' :
+          'husband'
+          }
       </p>
     ) : (
       <p className="Person__partner">I am not married</p>
